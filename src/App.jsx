@@ -1,5 +1,5 @@
-export function App() {
-  throw new Error('Eita Giovana, o forninho caiu!');
+import './styles/global.css';
 
-  return <h1>Hello JS</h1>
+export function App() {
+  return <h1>Hello World</h1>
 }

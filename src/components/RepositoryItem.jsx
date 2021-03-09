@@ -2,10 +2,10 @@ export function RepositoryItem(props) {
   return (
     <li>
           {/* Interpolação */}
-          <strong>{props.repository}</strong>
+          <strong>{props.repository ?? 'Default'}</strong>
           <p>Forms in React</p>
 
-          <a href="#">
+          <a href="">
             Acessar repositório
           </a>
         </li>

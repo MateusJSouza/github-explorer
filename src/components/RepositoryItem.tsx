@@ -1,12 +1,18 @@
 // React coloca todas as propriedades dentro de um argumento chamado "props"
-export function RepositoryItem(props) {
+interface RepositoryItemProps {
+  repository: {
+    name: string;
+    description: string;
+    html_url: string;
+  }
+}
+
+export function RepositoryItem(props: RepositoryItemProps) {
   return (
     <li>
           {/* Colocar {} porque será passado uma variável JS */}
           <strong>{props.repository.name}</strong>
           <p>{props.repository.description}</p>
-
-          <p>{props.repositories}</p>
 
           <a href={props.repository.html_url}>
             Acessar repositório

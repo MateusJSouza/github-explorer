@@ -3,8 +3,6 @@ import { RepositoryItem } from "./RepositoryItem";
 
 import '../styles/repositories.scss';
 
-// https://api.github.com/orgs/rocketseat/repos
-
 export function RepositoryList() {
   // Sempre que é uma lista, eu começo o valor do estado com um array vazio
   const [repositories, setRepositories] = useState([]);
